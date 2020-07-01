@@ -16,11 +16,7 @@ class PasswordManager : AppCompatActivity() {
             val intent = Intent(this, settings::class.java)
             startActivity(intent)
 
-            fun main(args: Array<String>) {
-                val file = File("input"+File.separator+"contents.txt")
-                var content:String = file.readText()
-                println(content)
-            }
+
 
 
 
