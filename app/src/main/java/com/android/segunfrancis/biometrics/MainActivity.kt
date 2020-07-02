@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(activity, "Canceled ", Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    // Called when an unrecoverable error has been encountered and operation is complete
+                    Toast.makeText(activity, "Please Register Fingerprint and Try again ", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
 
         val promptInfo = BiometricPrompt.PromptInfo.Builder()
             .setTitle("Fingerprint Login")
-            .setSubtitle("Use fingerprint for easier access")
-            .setDescription("Confirm fingerprint to continue")
+            .setSubtitle("Use Fingerprint for Easier Access")
+            .setDescription("Confirm Fingerprint to Continue")
             .setNegativeButtonText("Cancel")
             .build()
 
